@@ -9,6 +9,18 @@ $(function () {
         }
     });
 
+    // Mobile nav toggle
+    $('#navToggle').on('click', function () {
+        $('.site-nav').toggleClass('open');
+        $(this).find('i').toggleClass('bi-list bi-x');
+    });
+
+    // Close mobile nav on link click
+    $('.site-nav a').on('click', function () {
+        $('.site-nav').removeClass('open');
+        $('#navToggle i').removeClass('bi-x').addClass('bi-list');
+    });
+
     // Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
         var target = $(this.getAttribute('href'));
@@ -50,6 +62,6 @@ $(function () {
     // Edades de los hijos
     var kid1 = ageInYears(new Date(2015, 0, 1));  // enero 2015
     var kid2 = ageInYears(new Date(2020, 5, 1));  // junio 2020
-    $('#kid-ages').text(kid1 + ' y ' + kid2 + ' años');
+    $('#kid-ages').text(kid1 + ' y ' + kid2);
 
 });

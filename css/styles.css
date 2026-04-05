@@ -656,7 +656,28 @@ a.pilar-card-link:hover {
    RESPONSIVE
 ============================================ */
 @media (max-width: 768px) {
-    .site-nav { display: none; }
+    .site-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        padding: 16px 24px;
+        gap: 0;
+    }
+    .site-nav.open {
+        display: flex;
+    }
+    .site-nav a {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 1rem;
+    }
+    .site-nav a:last-child { border-bottom: none; }
     .hero-image { padding-top: 48px; padding-bottom: 60px; }
     .hero-image img { height: auto; max-width: 100%; border-radius: 12px; }
     .section { padding: 72px 0; }
