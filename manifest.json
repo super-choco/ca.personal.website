@@ -1,0 +1,38 @@
+{
+  "name": "Carlos Arranz - Web Personal",
+  "short_name": "Carlos Arranz",
+  "description": "Carlos Arranz - Ingeniero de Software, Padre y Triatleta",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2563EB",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
