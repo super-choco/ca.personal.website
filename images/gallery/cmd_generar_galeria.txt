@@ -1,0 +1,1 @@
+cd "/Users/carlosarranz/Library/CloudStorage/OneDrive-Personal/Mis archivos/Proyectos/ca.personal.website" && ./update-gallery.sh

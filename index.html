@@ -251,31 +251,12 @@
     <section id="familia" class="section familia-section">
         <div class="container">
             <div class="section-header">
-                <h2 data-i18n="familia-title">Mis momentos</h2>
+                <h2 data-i18n="familia-title">Instantes</h2>
                 <div class="section-line"></div>
                 <p class="section-subtitle" data-i18n="familia-subtitle">Los mejores momentos con mi familia y en mis viajes.</p>
-                <span class="under-construction" style="margin-top: 20px;"><i class="bi bi-cone-striped"></i> Under construction</span>
             </div>
-            <div class="row g-3 familia-grid">
-                <div class="col-6 col-lg-4 familia-item">
-                    <img src="images/img-sample2.jpg" alt="Galería 1" data-caption="Descripción de esta foto. Puedes poner hasta dos líneas aquí.">
-                </div>
-                <div class="col-6 col-lg-4 familia-item">
-                    <img src="images/img-sample3.jpg" alt="Galería 2" data-caption="Descripción de esta foto. Puedes poner hasta dos líneas aquí.">
-                </div>
-                <div class="col-6 col-lg-4 familia-item">
-                    <img src="images/img-sample4.jpg" alt="Galería 3" data-caption="Descripción de esta foto. Puedes poner hasta dos líneas aquí.">
-                </div>
-                <div class="col-6 col-lg-4 familia-item">
-                    <img src="images/img-sample5.jpg" alt="Galería 4" data-caption="Descripción de esta foto. Puedes poner hasta dos líneas aquí.">
-                </div>
-                <div class="col-6 col-lg-4 familia-item">
-                    <img src="images/img-sample6.jpg" alt="Galería 5" data-caption="Descripción de esta foto. Puedes poner hasta dos líneas aquí.">
-                </div>
-                <div class="col-6 col-lg-4 familia-item">
-                    <img src="images/img-sample7.jpg" alt="Galería 6" data-caption="Descripción de esta foto. Puedes poner hasta dos líneas aquí.">
-                </div>
-            </div>
+            <div class="row g-3 familia-grid" id="galleryGrid"></div>
+            <div class="gallery-pagination" id="galleryPagination"></div>
         </div>
     </section>
 
@@ -448,7 +429,7 @@
     <footer id="contact" class="site-footer">
         <div class="container text-center">
             <h3 data-i18n="footer-title">¿Hablamos?</h3>
-            <p data-i18n="footer-text">Si quieres conocer más sobre mis proyectos, escríbeme o conéctate en LinkedIn.</p>
+            <p data-i18n="footer-text">Si quieres conocer más sobre mi o mis proyectos, escríbeme o conéctate en mis redes.</p>
             <a href="mailto:hey@carlos-arranz.com" class="footer-email">hey@carlos-arranz.com</a>
             <div class="footer-social">
                 <a href="https://es.linkedin.com/in/carlosarranz23" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -528,7 +509,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/gallery-data.js?v=1"></script>
     <script src="js/i18n.js?v=1"></script>
-    <script src="js/main.js?v=2"></script>
+    <script src="js/main.js?v=3"></script>
 </body>
 </html>

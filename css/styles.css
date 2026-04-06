@@ -175,21 +175,6 @@ img { max-width: 100%; display: block; }
 }
 
 
-.under-construction {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #FFF3CD;
-    color: #856404;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #FFEAA0;
-}
 
 .eyebrow {
     font-size: 0.85rem;
@@ -487,6 +472,48 @@ a.pilar-card-link:hover {
 .familia-item:hover img {
     transform: scale(1.04);
     filter: grayscale(0%);
+}
+
+/* Paginación galería */
+.gallery-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 32px;
+}
+
+.gallery-page-btn {
+    background: none;
+    border: 1.5px solid var(--border);
+    color: var(--text-muted);
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    font-family: var(--font-body);
+}
+
+.gallery-page-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.gallery-page-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.gallery-page-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
 }
 
 /* ============================================

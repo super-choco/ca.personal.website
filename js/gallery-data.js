@@ -1,0 +1,15 @@
+var galleryData = [
+    { file: '2024_Bilbao - Estadio San Mamés.jpeg', year: '2024', name: 'Bilbao - Estadio San Mamés' },
+    { file: '2024_Boda A & R.jpeg', year: '2024', name: 'Boda A & R' },
+    { file: '2024_CF Montmeló UE Bros.jpeg', year: '2024', name: 'CF Montmeló UE Bros' },
+    { file: '2024_Circuit Catalunya.jpeg', year: '2024', name: 'Circuit Catalunya' },
+    { file: '2024_LEscala Triatlón Sprint 100x100Half.jpeg', year: '2024', name: 'LEscala Triatlón Sprint 100x100Half' },
+    { file: '2024_LEscala.jpeg', year: '2024', name: 'LEscala' },
+    { file: '2024_Sevilla - Medio Maratón.jpeg', year: '2024', name: 'Sevilla - Medio Maratón' },
+    { file: '2025_Madrid - Estadio Bernabeu Partido Real Madrid Legendss.jpeg', year: '2025', name: 'Madrid - Estadio Bernabeu Partido Real Madrid Legendss' },
+    { file: '2025_Menorca.jpeg', year: '2025', name: 'Menorca' },
+    { file: '2025_RCDE Stadium Español-Real Madrid.jpeg', year: '2025', name: 'RCDE Stadium Español-Real Madrid' },
+    { file: '2025_Vueling Cursa Bombers.jpeg', year: '2025', name: 'Vueling Cursa Bombers' },
+    { file: '2026_London - Wembley Tour cumple Izan.jpeg', year: '2026', name: 'London - Wembley Tour cumple Izan' },
+    { file: '2026_Menorca.jpeg', year: '2026', name: 'Menorca' },
+];
