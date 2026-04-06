@@ -55,6 +55,42 @@ img { max-width: 100%; display: block; }
     justify-content: space-between;
 }
 
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.lang-btn:hover { color: var(--accent); }
+.lang-btn.active { color: var(--accent); }
+
+.lang-sep {
+    color: var(--border);
+    font-size: 0.7rem;
+    line-height: 1;
+    pointer-events: none;
+}
+
 .logo {
     font-family: var(--font-head);
     font-size: 1rem;
