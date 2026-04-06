@@ -474,6 +474,39 @@ a.pilar-card-link:hover {
 .pilar-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
 
 /* ============================================
+   LUGARES
+============================================ */
+.lugares-section {
+    background: var(--bg);
+}
+
+.places-map {
+    width: 100%;
+    height: 480px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.place-marker {
+    width: 12px;
+    height: 12px;
+    background: var(--accent);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .place-marker {
+    border-color: #333;
+}
+
+@media (max-width: 768px) {
+    .places-map { height: 360px; }
+}
+
+/* ============================================
    FAMILIA / MOMENTOS
 ============================================ */
 .familia-section {

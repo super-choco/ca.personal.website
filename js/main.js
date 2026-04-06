@@ -36,6 +36,49 @@ $(function () {
         }
     });
 
+    // ---- MAPA DE LUGARES ----
+    if (typeof L !== 'undefined' && typeof placesData !== 'undefined' && placesData.length > 0) {
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        var tileLight = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+        var tileDark = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+
+        var map = L.map('placesMap', {
+            scrollWheelZoom: false,
+            attributionControl: false
+        }).setView([42, 2], 5);
+
+        var tileLayer = L.tileLayer(isDark ? tileDark : tileLight, {
+            maxZoom: 18
+        }).addTo(map);
+
+        // Cambiar tiles al cambiar tema
+        $('#themeToggle').on('click', function () {
+            setTimeout(function () {
+                var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+                tileLayer.setUrl(dark ? tileDark : tileLight);
+            }, 50);
+        });
+
+        // Marcadores
+        var markerIcon = L.divIcon({
+            className: 'place-marker',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6],
+            popupAnchor: [0, -8]
+        });
+
+        $.each(placesData, function (i, place) {
+            L.marker([place.lat, place.lng], { icon: markerIcon })
+                .addTo(map)
+                .bindPopup('<strong>' + place.name + '</strong>');
+        });
+
+        // Ajustar vista a todos los marcadores
+        var points = [];
+        $.each(placesData, function (i, p) { points.push([p.lat, p.lng]); });
+        map.fitBounds(points, { padding: [40, 40] });
+    }
+
     // ---- GALERÍA DINÁMICA ----
     var GALLERY_PER_PAGE = 6;
     var galleryPage = 0;

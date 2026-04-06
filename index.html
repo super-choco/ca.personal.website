@@ -63,8 +63,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=20260406">
     <link rel="manifest" href="manifest.json">
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
     <!-- Custom CSS -->
-    <link href="css/styles.css?v=3" rel="stylesheet">
+    <link href="css/styles.css?v=4" rel="stylesheet">
 </head>
 <body>
 
@@ -260,6 +263,18 @@
             </div>
             <div class="row g-3 familia-grid" id="galleryGrid"></div>
             <div class="gallery-pagination" id="galleryPagination"></div>
+        </div>
+    </section>
+
+    <!-- LUGARES -->
+    <section id="lugares" class="section lugares-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="lugares-title">Lugares</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle" data-i18n="lugares-subtitle">Sitios que he visitado y que me han dejado huella.</p>
+            </div>
+            <div id="placesMap" class="places-map"></div>
         </div>
     </section>
 
@@ -512,6 +527,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/places-data.js?v=1"></script>
     <script src="js/gallery-data.js?v=1"></script>
     <script src="js/i18n.js?v=1"></script>
     <script src="js/main.js?v=3"></script>
