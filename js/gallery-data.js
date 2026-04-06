@@ -6,6 +6,7 @@ var galleryData = [
     { file: '2024_LEscala Triatlón Sprint 100x100Half.jpeg', year: '2024', name: 'LEscala Triatlón Sprint 100x100Half' },
     { file: '2024_LEscala.jpeg', year: '2024', name: 'LEscala' },
     { file: '2024_Sevilla - Medio Maratón.jpeg', year: '2024', name: 'Sevilla - Medio Maratón' },
+    { file: '2025_Entrega premios 100x100Half.jpeg', year: '2025', name: 'Entrega premios 100x100Half' },
     { file: '2025_Madrid - Estadio Bernabeu Partido Real Madrid Legendss.jpeg', year: '2025', name: 'Madrid - Estadio Bernabeu Partido Real Madrid Legendss' },
     { file: '2025_Menorca.jpeg', year: '2025', name: 'Menorca' },
     { file: '2025_RCDE Stadium Español-Real Madrid.jpeg', year: '2025', name: 'RCDE Stadium Español-Real Madrid' },

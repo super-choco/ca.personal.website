@@ -82,7 +82,7 @@ var i18n = {
             'reto-202x-full-title': 'Ironman 140.6',
             'reto-202x-full-desc':  'Triatlón · 3.8km natación · 180km bici · 42km carrera',
             'footer-title':         '¿Hablamos?',
-            'footer-text':          'Si quieres conocer más sobre mis proyectos, escríbeme o conéctate en LinkedIn.',
+            'footer-text':          'Si quieres conocer más sobre mi o mis proyectos, escríbeme o conéctate en LinkedIn.',
             'footer-arch':          'Arquitectura de esta web',
             'arch-modal-title':     'Arquitectura de esta web'
         },
@@ -167,7 +167,7 @@ var i18n = {
             'reto-202x-full-title': 'Ironman 140.6',
             'reto-202x-full-desc':  'Triathlon · 3.8km swim · 180km bike · 42km run',
             'footer-title':         'Let\'s talk?',
-            'footer-text':          'If you want to know more about my projects, drop me a line or connect on LinkedIn.',
+            'footer-text':          'If you want to know more about me or my projects, drop me a line or connect on LinkedIn.',
             'footer-arch':          'Architecture of this site',
             'arch-modal-title':     'Architecture of this site'
         },
@@ -252,7 +252,7 @@ var i18n = {
             'reto-202x-full-title': 'Ironman 140.6',
             'reto-202x-full-desc':  'Triatló · 3,8km natació · 180km bici · 42km cursa',
             'footer-title':         'Parlem?',
-            'footer-text':          'Si vols saber més sobre els meus projectes, escriu-me o connecta\'t a LinkedIn.',
+            'footer-text':          'Si vols saber més sobre mi o els meus projectes, escriu-me o connecta\'t a LinkedIn.',
             'footer-arch':          'Arquitectura d\'aquest web',
             'arch-modal-title':     'Arquitectura d\'aquest web'
         }
