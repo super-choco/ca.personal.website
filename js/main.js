@@ -9,6 +9,37 @@ $(function () {
         }
     });
 
+    // Lightbox
+    var lbImages = [];
+    var lbCurrent = 0;
+    var lbModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+
+    $('.familia-item img').each(function () {
+        lbImages.push({ src: $(this).attr('src'), caption: $(this).data('caption') || '' });
+    });
+
+    function lbShow(index) {
+        lbCurrent = (index + lbImages.length) % lbImages.length;
+        $('#lightboxImg').attr('src', lbImages[lbCurrent].src);
+        $('#lightboxCaption').text(lbImages[lbCurrent].caption);
+    }
+
+    $('.familia-item img').on('click', function () {
+        var src = $(this).attr('src');
+        lbShow($.map(lbImages, function (img) { return img.src; }).indexOf(src));
+        lbModal.show();
+    });
+
+    $('#lbPrev').on('click', function () { lbShow(lbCurrent - 1); });
+    $('#lbNext').on('click', function () { lbShow(lbCurrent + 1); });
+
+    // Teclado: flechas y ESC
+    $(document).on('keydown', function (e) {
+        if (!$('#lightboxModal').hasClass('show')) return;
+        if (e.key === 'ArrowLeft')  { lbShow(lbCurrent - 1); }
+        if (e.key === 'ArrowRight') { lbShow(lbCurrent + 1); }
+    });
+
     // Mobile nav toggle
     $('#navToggle').on('click', function () {
         $('.site-nav').toggleClass('open');

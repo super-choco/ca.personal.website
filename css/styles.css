@@ -490,6 +490,87 @@ a.pilar-card-link:hover {
 }
 
 /* ============================================
+   LIGHTBOX
+============================================ */
+.lightbox-modal .modal-backdrop,
+.lightbox-modal { }
+
+.lightbox-dialog {
+    max-width: 90vw;
+    width: auto;
+    margin: 0 auto;
+}
+
+.lightbox-content {
+    background: #0a0a0a;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+.lightbox-content #lightboxImg {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.lightbox-caption {
+    color: #ccc;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 14px 48px;
+    line-height: 1.5;
+    min-height: 48px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1rem;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.15); }
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.1rem;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.15); }
+.lightbox-prev { left: 12px; }
+.lightbox-next { right: 12px; }
+
+/* ============================================
    MIS RETOS — OPCIÓN A (BUCKET LIST)
 ============================================ */
 .retos-section { background: var(--bg-alt); border-top: 1px solid var(--border); }
