@@ -1,4 +1,31 @@
+// ---- THEME (se ejecuta antes del DOM ready para evitar flash) ----
+(function () {
+    function getTheme() {
+        var saved = localStorage.getItem('theme');
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', getTheme());
+})();
+
 $(function () {
+
+    // Theme toggle
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        var icon = $('#themeToggle i');
+        icon.removeClass('bi-moon bi-sun').addClass(theme === 'dark' ? 'bi-sun' : 'bi-moon');
+        localStorage.setItem('theme', theme);
+    }
+
+    // Sincronizar icono con el tema ya aplicado
+    var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    $('#themeToggle i').removeClass('bi-moon bi-sun').addClass(currentTheme === 'dark' ? 'bi-sun' : 'bi-moon');
+
+    $('#themeToggle').on('click', function () {
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
 
     // Header scroll effect
     $(window).on('scroll', function () {
