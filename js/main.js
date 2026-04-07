@@ -177,6 +177,40 @@ $(function () {
         renderGallery(0);
     }
 
+    // ---- TECH CARD POPUP ----
+    var techModal = new bootstrap.Modal(document.getElementById('techModal'));
+
+    $(document).on('click keydown', '.tech-card', function (e) {
+        if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault();
+
+        var cardId = $(this).data('tech-id');
+        var lang = localStorage.getItem('lang') || 'es';
+        var popups = i18n.techPopups[lang] || i18n.techPopups['es'];
+        var data = popups[cardId];
+        if (!data) return;
+
+        $('#techModalIcon').attr('class', 'bi ' + data.icon + ' tech-modal-icon');
+        $('#techModalTitle').text($('[data-tech-id="' + cardId + '"] h3').text());
+        $('#techModalPeriod').text(data.period);
+
+        var itemsHtml = data.items.map(function (item) {
+            return '<li>' + item + '</li>';
+        }).join('');
+
+        var tagsHtml = data.tags.map(function (tag) {
+            return '<span class="tech-modal-tag">' + tag + '</span>';
+        }).join('');
+
+        $('#techModalBody').html(
+            '<p class="tech-modal-intro">' + data.intro + '</p>' +
+            '<ul class="tech-modal-list">' + itemsHtml + '</ul>' +
+            '<div class="tech-modal-tags">' + tagsHtml + '</div>'
+        );
+
+        techModal.show();
+    });
+
     // ---- MOBILE NAV TOGGLE ----
     $('#navToggle').on('click', function () {
         $('.site-nav').toggleClass('open');

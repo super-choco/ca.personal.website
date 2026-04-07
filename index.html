@@ -116,6 +116,7 @@
                     <ul class="hero-social">
                         <li><a href="mailto:hey@carlos-arranz.com"><i class="bi bi-envelope"></i></a></li>
                         <li><a href="https://es.linkedin.com/in/carlosarranz23" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="https://www.strava.com/athletes/34088790" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg></a></li>
                         <li><a href="https://www.instagram.com/carlosarranz23/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -243,11 +244,11 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="pilar-card">
+                    <a href="#retos" class="pilar-card pilar-card-link">
                         <i class="bi bi-heart-pulse hobby-icon"></i>
                         <h4 data-i18n="pillar-sport-title">Deporte</h4>
                         <p data-i18n="pillar-sport-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -288,24 +289,27 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="tech-card">
+                    <div class="tech-card" data-tech-id="1" role="button" tabindex="0">
                         <i class="bi bi-code-slash card-icon"></i>
-                        <h3 data-i18n="tech-card1-title">Desarrollo web</h3>
-                        <p data-i18n="tech-card1-text">Construyo sitios web modernos y adaptables que funcionan bien en desktop y móvil.</p>
+                        <h3 data-i18n="tech-card1-title">Desarrollo .NET (2008-2013)</h3>
+                        <p data-i18n="tech-card1-text">Análisis y desarrollo de procesos Batch, Backoffice y WebUI en tecnologías .NET, ASP.NET y SQL</p>
+                        <span class="tech-card-hint"><i class="bi bi-arrow-up-right-square"></i></span>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="tech-card">
-                        <i class="bi bi-terminal card-icon"></i>
-                        <h3 data-i18n="tech-card2-title">Diseño visual</h3>
-                        <p data-i18n="tech-card2-text">Cuido la tipografía, los colores y la armonía visual para que el contenido respire.</p>
+                    <div class="tech-card" data-tech-id="2" role="button" tabindex="0">
+                        <i class="bi bi-diagram-3 card-icon"></i>
+                        <h3 data-i18n="tech-card2-title">Liderazgo técnico (2013-2018)</h3>
+                        <p data-i18n="tech-card2-text">Lider técnico de varios equipos en el área de operaciones. Modelado y diseño de arquitectura de aplicaciones, seguimiento, soporte y formación.</p>
+                        <span class="tech-card-hint"><i class="bi bi-arrow-up-right-square"></i></span>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="tech-card">
+                    <div class="tech-card" data-tech-id="3" role="button" tabindex="0">
                         <i class="bi bi-people card-icon"></i>
-                        <h3 data-i18n="tech-card3-title">Proyectos personales</h3>
-                        <p data-i18n="tech-card3-text">Trabajo con ideas, fotografías y tecnología para crear proyectos que reflejan quién soy.</p>
+                        <h3 data-i18n="tech-card3-title">Liderazgo de equipos (2018-2026)</h3>
+                        <p data-i18n="tech-card3-text">Definición estratégica, creación y desarrollo de equipos de alto rendimiento, impulsando prácticas de ingeniería y alineación con los objetivos de negocio.</p>
+                        <span class="tech-card-hint"><i class="bi bi-arrow-up-right-square"></i></span>
                     </div>
                 </div>
             </div>
@@ -319,6 +323,7 @@
                 <h2 data-i18n="retos-title">Mis retos</h2>
                 <div class="section-line"></div>
                 <p class="section-subtitle" data-i18n="retos-subtitle">Una vida de desafíos, dentro y fuera del deporte.</p>
+                <p class="section-subtitle"><a href="https://www.strava.com/athletes/34088790" target="_blank" class="strava-link" data-i18n="retos-strava-link">Aquí tienes mi perfil de Strava</a></p>
             </div>
             <div class="timeline">
 
@@ -452,6 +457,7 @@
             <div class="footer-social">
                 <a href="https://es.linkedin.com/in/carlosarranz23" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.instagram.com/carlosarranz23/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/34088790" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg></a>
                 <a href="mailto:hey@carlos-arranz.com"><i class="bi bi-envelope"></i></a>
             </div>
             <p class="footer-note">© 2026 Carlos Arranz · <a href="#" class="arch-link" data-bs-toggle="modal" data-bs-target="#archModal" data-i18n="footer-arch">Arquitectura de esta web</a></p>
@@ -511,6 +517,25 @@
         </div>
     </footer>
 
+    <!-- MODAL TECH CARD -->
+    <div class="modal fade" id="techModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content tech-modal-content">
+                <div class="modal-header tech-modal-header border-0">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi tech-modal-icon" id="techModalIcon"></i>
+                        <div>
+                            <h5 class="modal-title mb-0" id="techModalTitle"></h5>
+                            <span class="tech-modal-period" id="techModalPeriod"></span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body tech-modal-body" id="techModalBody"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- LIGHTBOX -->
     <div class="modal fade lightbox-modal" id="lightboxModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered lightbox-dialog">
@@ -530,7 +555,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="js/places-data.js?v=1"></script>
     <script src="js/gallery-data.js?v=1"></script>
-    <script src="js/i18n.js?v=1"></script>
-    <script src="js/main.js?v=3"></script>
+    <script src="js/i18n.js?v=2"></script>
+    <script src="js/main.js?v=4"></script>
 </body>
 </html>
