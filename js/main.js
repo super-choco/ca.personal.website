@@ -12,7 +12,7 @@
         red:    { light: '#DC2626', dark: '#EF4444' },
         orange: { light: '#EA580C', dark: '#FB923C' }
     };
-    var savedColor = localStorage.getItem('accent-color') || 'red';
+    var savedColor = localStorage.getItem('accent-color') || 'blue';
     var theme = getTheme();
     document.documentElement.style.setProperty('--accent', colors[savedColor][theme]);
     document.documentElement.setAttribute('data-accent', savedColor);
@@ -36,7 +36,7 @@ $(function () {
         $('.color-dot[data-color="' + color + '"]').addClass('active');
     }
 
-    var savedAccent = localStorage.getItem('accent-color') || 'red';
+    var savedAccent = localStorage.getItem('accent-color') || 'blue';
     applyAccent(savedAccent);
 
     $('.color-dot').on('click', function () {
@@ -176,7 +176,7 @@ $(function () {
     // ---- LIGHTBOX ----
     var lbImages = [];
     var lbCurrent = 0;
-    var lbModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+    var lbModal = document.getElementById('lightboxModal') ? new bootstrap.Modal(document.getElementById('lightboxModal')) : null;
 
     function initLightbox() {
         lbImages = [];
@@ -214,7 +214,7 @@ $(function () {
     }
 
     // ---- TECH CARD POPUP ----
-    var techModal = new bootstrap.Modal(document.getElementById('techModal'));
+    var techModal = document.getElementById('techModal') ? new bootstrap.Modal(document.getElementById('techModal')) : null;
 
     $(document).on('click keydown', '.tech-card', function (e) {
         if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;

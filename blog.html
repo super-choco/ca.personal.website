@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>Blog | Carlos Arranz</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="Blog de Carlos Arranz — reflexiones sobre tecnología, entrenamiento y vida.">
+    <meta name="author" content="Carlos Arranz">
+    <link rel="canonical" href="https://carlos-arranz.com/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carlos-arranz.com/blog.html">
+    <meta property="og:title" content="Blog | Carlos Arranz">
+    <meta property="og:description" content="Reflexiones sobre tecnología, entrenamiento y vida.">
+    <meta property="og:image" content="https://carlos-arranz.com/images/carlos-arranz2.jpg">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico?v=20260406" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=20260406">
+    <link rel="icon" type="image/png" href="images/favicon.png?v=20260406">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=20260406">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css?v=5" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a class="logo" href="index.html"><span class="logo-badge">CA</span> carlos-arranz.com</a>
+                <nav class="site-nav">
+                    <a href="index.html#familia" data-i18n="nav-familia">Familia</a>
+                    <a href="index.html#tecnologia" data-i18n="nav-tecnologia">Tecnología</a>
+                    <a href="index.html#retos" data-i18n="nav-deporte">Deporte</a>
+                    <a href="index.html#contact" data-i18n="nav-contacto">Contacto</a>
+                    <a href="blog.html" class="nav-active">Blog</a>
+                </nav>
+                <div class="header-controls">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <span class="lang-sep">|</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <span class="lang-sep">|</span>
+                        <button class="lang-btn" data-lang="ca">CA</button>
+                    </div>
+                    <div class="color-switcher">
+                        <button class="color-dot" data-color="blue"   title="Azul"    style="background:#2563EB"></button>
+                        <button class="color-dot" data-color="red"    title="Rojo"    style="background:#DC2626"></button>
+                        <button class="color-dot" data-color="orange" title="Naranja" style="background:#EA580C"></button>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle" title="Cambiar tema">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <button class="nav-toggle d-md-none" id="navToggle">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BLOG CONTENT -->
+    <main class="blog-main">
+        <div class="container">
+            <div id="blogContent"></div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="site-footer">
+        <div class="container text-center">
+            <h3 data-i18n="footer-title">¿Hablamos?</h3>
+            <p data-i18n="footer-text">Si quieres conocer más sobre mi o mis proyectos, escríbeme o conéctate en mis redes.</p>
+            <a href="mailto:hey@carlos-arranz.com" class="footer-email">hey@carlos-arranz.com</a>
+            <div class="footer-social">
+                <a href="https://es.linkedin.com/in/carlosarranz23" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/carlosarranz23/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/34088790" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg></a>
+                <a href="mailto:hey@carlos-arranz.com"><i class="bi bi-envelope"></i></a>
+            </div>
+            <p class="footer-note">© 2026 Carlos Arranz · <a href="#" class="arch-link" data-bs-toggle="modal" data-bs-target="#archModal" data-i18n="footer-arch">Arquitectura de esta web</a></p>
+        </div>
+    </footer>
+
+    <!-- MODAL ARQUITECTURA -->
+    <div class="modal fade" id="archModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" data-i18n="arch-modal-title">Arquitectura de esta web</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:Open Sans,sans-serif">
+                        <rect width="900" height="520" fill="#f7f7f5" rx="12"/>
+                        <rect x="370" y="20" width="160" height="60" rx="8" fill="#2563EB"/>
+                        <text x="450" y="45" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">👤 Usuario</text>
+                        <text x="450" y="65" text-anchor="middle" fill="#dbeafe" font-size="11">carlos-arranz.com</text>
+                        <line x1="450" y1="80" x2="450" y2="120" stroke="#2563EB" stroke-width="2" marker-end="url(#arrow)"/>
+                        <rect x="330" y="120" width="240" height="65" rx="8" fill="#fff" stroke="#e8e8e8" stroke-width="1.5"/>
+                        <text x="450" y="145" text-anchor="middle" fill="#111" font-size="13" font-weight="600">🌐 Dinahosting</text>
+                        <text x="450" y="163" text-anchor="middle" fill="#777" font-size="11">Registro dominio + DNS</text>
+                        <line x1="450" y1="185" x2="450" y2="225" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+                        <rect x="310" y="225" width="280" height="65" rx="8" fill="#111" stroke="#333" stroke-width="1.5"/>
+                        <text x="450" y="250" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">⚙️ GitHub Pages</text>
+                        <text x="450" y="265" text-anchor="middle" fill="#aaa" font-size="11">super-choco.github.io</text>
+                        <text x="450" y="282" text-anchor="middle" fill="#aaa" font-size="10">Deploy automático en cada push</text>
+                        <line x1="450" y1="290" x2="450" y2="330" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+                        <rect x="340" y="330" width="220" height="55" rx="8" fill="#2563EB"/>
+                        <text x="450" y="355" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">🖥️ Web</text>
+                        <text x="450" y="373" text-anchor="middle" fill="#dbeafe" font-size="11">HTML · Bootstrap 5 · jQuery</text>
+                        <rect x="20" y="180" width="220" height="180" rx="8" fill="#fff" stroke="#e8e8e8" stroke-width="1.5"/>
+                        <text x="130" y="205" text-anchor="middle" fill="#111" font-size="12" font-weight="700">🛠️ Desarrollo</text>
+                        <text x="130" y="230" text-anchor="middle" fill="#555" font-size="11">VS Code + Claude Code</text>
+                        <text x="130" y="252" text-anchor="middle" fill="#777" font-size="10">(Anthropic)</text>
+                        <text x="130" y="278" text-anchor="middle" fill="#555" font-size="11">Git → push a main</text>
+                        <text x="130" y="298" text-anchor="middle" fill="#777" font-size="10">→ deploy automático</text>
+                        <text x="130" y="325" text-anchor="middle" fill="#2563EB" font-size="10">claude-sonnet-4-6</text>
+                        <line x1="240" y1="258" x2="310" y2="258" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+                        <rect x="660" y="180" width="220" height="180" rx="8" fill="#fff" stroke="#e8e8e8" stroke-width="1.5"/>
+                        <text x="770" y="205" text-anchor="middle" fill="#111" font-size="12" font-weight="700">📓 Documentación</text>
+                        <text x="770" y="230" text-anchor="middle" fill="#555" font-size="11">Obsidian</text>
+                        <text x="770" y="250" text-anchor="middle" fill="#555" font-size="11">Vault: CEREBRO</text>
+                        <text x="770" y="345" text-anchor="middle" fill="#777" font-size="10">Actualizado en tiempo real</text>
+                        <line x1="660" y1="258" x2="590" y2="258" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+                        <text x="450" y="430" text-anchor="middle" fill="#aaa" font-size="10">Hecha con ❤️ usando VS Code + Claude Code · Documentada en Obsidian · Alojada en GitHub Pages</text>
+                        <defs>
+                            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                                <path d="M0,0 L0,6 L8,3 z" fill="#888"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/posts-data.js?v=1"></script>
+    <script src="js/i18n.js?v=2"></script>
+    <script src="js/main.js?v=6"></script>
+    <script src="js/blog.js?v=1"></script>
+</body>
+</html>
