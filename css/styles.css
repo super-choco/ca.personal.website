@@ -6,7 +6,7 @@
     --bg-alt: #f7f7f5;
     --text: #111111;
     --text-muted: #777;
-    --accent: #2563EB;
+    --accent: #2563EB; /* fallback; sobreescrito por JS */
     --border: #e8e8e8;
     --bg-inverse: #111111;
     --font-body: 'Open Sans', sans-serif;
@@ -18,7 +18,7 @@
     --bg-alt: #1a1a1a;
     --text: #e8e8e8;
     --text-muted: #999;
-    --accent: #4B8BFF;
+    --accent: #4B8BFF; /* fallback; sobreescrito por JS */
     --border: #2a2a2a;
     --bg-inverse: #080808;
 }
@@ -115,6 +115,23 @@ img { max-width: 100%; display: block; }
     align-items: center;
 }
 .theme-toggle:hover { color: var(--accent); }
+
+.color-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.color-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.15s, border-color 0.15s;
+}
+.color-dot:hover { transform: scale(1.2); }
+.color-dot.active { border-color: var(--text); transform: scale(1.15); }
 
 .logo {
     font-family: var(--font-head);

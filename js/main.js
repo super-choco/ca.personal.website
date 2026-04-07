@@ -1,4 +1,4 @@
-// ---- THEME (se ejecuta antes del DOM ready para evitar flash) ----
+// ---- THEME + COLOR (se ejecuta antes del DOM ready para evitar flash) ----
 (function () {
     function getTheme() {
         var saved = localStorage.getItem('theme');
@@ -6,9 +6,42 @@
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
     document.documentElement.setAttribute('data-theme', getTheme());
+
+    var colors = {
+        blue:   { light: '#2563EB', dark: '#4B8BFF' },
+        red:    { light: '#DC2626', dark: '#EF4444' },
+        orange: { light: '#EA580C', dark: '#FB923C' }
+    };
+    var savedColor = localStorage.getItem('accent-color') || 'red';
+    var theme = getTheme();
+    document.documentElement.style.setProperty('--accent', colors[savedColor][theme]);
+    document.documentElement.setAttribute('data-accent', savedColor);
 })();
 
 $(function () {
+
+    // ---- COLOR ACCENT ----
+    var accentColors = {
+        blue:   { light: '#2563EB', dark: '#4B8BFF' },
+        red:    { light: '#DC2626', dark: '#EF4444' },
+        orange: { light: '#EA580C', dark: '#FB923C' }
+    };
+
+    function applyAccent(color) {
+        var theme = document.documentElement.getAttribute('data-theme') || 'light';
+        document.documentElement.style.setProperty('--accent', accentColors[color][theme]);
+        document.documentElement.setAttribute('data-accent', color);
+        localStorage.setItem('accent-color', color);
+        $('.color-dot').removeClass('active');
+        $('.color-dot[data-color="' + color + '"]').addClass('active');
+    }
+
+    var savedAccent = localStorage.getItem('accent-color') || 'red';
+    applyAccent(savedAccent);
+
+    $('.color-dot').on('click', function () {
+        applyAccent($(this).data('color'));
+    });
 
     // Theme toggle
     function applyTheme(theme) {
@@ -16,6 +49,9 @@ $(function () {
         var icon = $('#themeToggle i');
         icon.removeClass('bi-moon bi-sun').addClass(theme === 'dark' ? 'bi-sun' : 'bi-moon');
         localStorage.setItem('theme', theme);
+        // re-aplicar color de acento al cambiar tema
+        var color = localStorage.getItem('accent-color') || 'red';
+        document.documentElement.style.setProperty('--accent', accentColors[color][theme]);
     }
 
     // Sincronizar icono con el tema ya aplicado
