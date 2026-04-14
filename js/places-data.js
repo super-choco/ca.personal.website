@@ -13,10 +13,16 @@ var placesData = [
     { name: 'Andorra', lat: 42.5063, lng: 1.5218 },
     { name: 'Jaén', lat: 37.7796, lng: -3.7849 },
     { name: 'Pamplona', lat: 42.8125, lng: -1.6458 },
+    { name: 'Tudela', lat: 42.0617, lng: -1.6057 },
+    { name: 'Huesca', lat: 42.1401, lng: -0.4089 },
+    { name: 'Girona', lat: 41.9794, lng: 2.8214 },
+    { name: 'Tarragona', lat: 41.1189, lng: 1.2445 },
+    { name: 'Lleida', lat: 41.6140, lng: 0.6266 },
 
     // Francia
     { name: 'Paris', lat: 48.8566, lng: 2.3522 },
     { name: 'Sigean', lat: 43.0333, lng: 2.9833 },
+    { name: 'Perpignan', lat: 42.6887, lng: 2.8948 },
 
     // Italia
     { name: 'Roma', lat: 41.9028, lng: 12.4964 },
