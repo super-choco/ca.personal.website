@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot-Image
+Disallow: /images/gallery/
+
 Sitemap: https://carlos-arranz.com/sitemap.xml
