@@ -293,4 +293,43 @@ $(function () {
     var kid2 = ageInYears(new Date(2020, 5, 1));
     $('#kid-ages').text(kid1 + ' y ' + kid2);
 
+    // ---- ANIMACIONES DE ENTRADA ----
+    var revealTargets = [
+        { sel: '.section-header',   delay: '' },
+        { sel: '.number-item',      delay: true },
+        { sel: '.pilar-card',       delay: true },
+        { sel: '.tech-card',        delay: true },
+        { sel: '.timeline-item',    delay: '' },
+        { sel: '.hero-copy',        delay: '' },
+        { sel: '.hero-image',       delay: 'reveal-delay-1' },
+        { sel: '.familia-grid',     delay: '' },
+        { sel: '#placesMap',        delay: '' },
+        { sel: '.footer-email',     delay: '' },
+    ];
+
+    revealTargets.forEach(function(target) {
+        $(target.sel).each(function(i) {
+            $(this).addClass('reveal');
+            if (target.delay === true) {
+                var d = (i % 3) + 1;
+                $(this).addClass('reveal-delay-' + d);
+            } else if (target.delay) {
+                $(this).addClass(target.delay);
+            }
+        });
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+        observer.observe(el);
+    });
+
 });
