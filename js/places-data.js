@@ -23,10 +23,16 @@ var placesData = [
     { name: 'Paris', lat: 48.8566, lng: 2.3522 },
     { name: 'Sigean', lat: 43.0333, lng: 2.9833 },
     { name: 'Perpignan', lat: 42.6887, lng: 2.8948 },
+    { name: 'Cannes', lat: 43.5528, lng: 7.0174 },
 
     // Italia
     { name: 'Roma', lat: 41.9028, lng: 12.4964 },
     { name: 'Venecia', lat: 45.4408, lng: 12.3155 },
+    { name: 'Genova', lat: 44.4056, lng: 8.9463 },
+    { name: 'La Spezia', lat: 44.1025, lng: 9.8241 },
+    { name: 'Pisa', lat: 43.7228, lng: 10.4017 },
+    { name: 'Porto Venere', lat: 44.0500, lng: 9.8333 },
+    { name: 'Civitavecchia', lat: 42.0924, lng: 11.7954 },
 
     // Bélgica
     { name: 'Bruselas', lat: 50.8503, lng: 4.3517 },
@@ -35,6 +41,7 @@ var placesData = [
     // Países Bajos
     { name: 'Amsterdam', lat: 52.3676, lng: 4.9041 },
     { name: 'Rotterdam', lat: 51.9244, lng: 4.4777 },
+    { name: 'Volendam', lat: 52.4953, lng: 5.0704 },
 
     // República Checa
     { name: 'Praga', lat: 50.0755, lng: 14.4378 },
