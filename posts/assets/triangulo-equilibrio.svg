@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title description">
+  <title id="title">Triángulo del equilibrio entre familia, trabajo y deporte</title>
+  <desc id="description">Un punto situado dentro de un triángulo representa el equilibrio dinámico entre familia, trabajo y deporte.</desc>
+  <defs>
+    <linearGradient id="triangle-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#111827" flood-opacity=".24"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="620" rx="24" fill="#f7f7f5"/>
+
+  <path d="M400 105 115 510h570Z" fill="url(#triangle-fill)" stroke="#2563eb" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M400 105 400 510M115 510 542.5 307.5M685 510 257.5 307.5" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="7 9" opacity=".36"/>
+
+  <circle cx="400" cy="105" r="48" fill="#111827"/>
+  <circle cx="115" cy="510" r="48" fill="#111827"/>
+  <circle cx="685" cy="510" r="48" fill="#111827"/>
+
+  <text x="400" y="110" fill="#fff" font-family="Open Sans, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">TRABAJO</text>
+  <text x="115" y="516" fill="#fff" font-family="Open Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">FAMILIA</text>
+  <text x="685" y="516" fill="#fff" font-family="Open Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">DEPORTE</text>
+
+  <circle cx="373" cy="338" r="22" fill="#2563eb" stroke="#fff" stroke-width="6" filter="url(#shadow)"/>
+  <text x="373" y="383" fill="#374151" font-family="Open Sans, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">equilibrio dinámico</text>
+</svg>
