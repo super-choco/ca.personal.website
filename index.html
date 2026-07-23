@@ -67,7 +67,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
     <!-- Custom CSS -->
-    <link href="css/styles.css?v=5" rel="stylesheet">
+    <link href="css/styles.css?v=7" rel="stylesheet">
 </head>
 <body>
 
@@ -195,6 +195,24 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ÚLTIMAS REFLEXIONES -->
+    <section id="blog-destacado" class="section home-blog-section">
+        <div class="container">
+            <div class="section-header home-blog-header">
+                <div>
+                    <h2 data-i18n="home-blog-title">Últimas reflexiones</h2>
+                    <div class="section-line"></div>
+                    <p class="section-subtitle" data-i18n="home-blog-subtitle">Ideas sobre tecnología, deporte, familia y todo lo que ocurre entre medias.</p>
+                </div>
+                <a href="blog.html" class="home-blog-all">
+                    <span data-i18n="home-blog-all">Ver todos los artículos</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div id="homeBlogGrid" class="home-blog-grid"></div>
         </div>
     </section>
 
@@ -517,7 +535,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="js/places-data.js?v=2"></script>
     <script src="js/gallery-data.js?v=1"></script>
-    <script src="js/i18n.js?v=4"></script>
+    <script src="js/posts-data.js?v=2"></script>
+    <script src="js/i18n.js?v=5"></script>
     <script src="js/main.js?v=6"></script>
+    <script src="js/home-blog.js?v=1"></script>
 </body>
 </html>

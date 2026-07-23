@@ -99,7 +99,15 @@ Desde fuera puede parecer la parte más prescindible del triángulo. Al fin y al
 
 Sin embargo, para mí el deporte no es solamente el tiempo durante el que estoy entrenando. También es una forma de ordenar mi cabeza, cuidar la salud, liberar tensión y recuperar energía. En muchos momentos, protege mi capacidad para responder mejor en los otros dos ámbitos.
 
-Y el equilibrio se complica cuando, como en mi caso, no practico un único deporte, sino varios. El triatlón no solo exige entrenar natación, ciclismo y carrera. También requiere reservar tiempo para la fuerza, los estiramientos, la recuperación y alguna visita al fisio. Si además aparece un reto nuevo, como terminar un HYROX, la ecuación incorpora también alguna sesión en el box de CrossFit. Al final, hablamos de entrenar prácticamente todos los días e incluso de doblar algunas jornadas.
+Y el equilibrio se complica cuando, como en mi caso, no practico un único deporte, sino varios. El triatlón no solo exige entrenar natación, ciclismo y carrera. También requiere reservar tiempo para la fuerza, los estiramientos, la recuperación y alguna visita al fisio. Si además aparecen retos nuevos, como puede ser terminar el HYROX de Barcelona este año, la ecuación incorpora otro tipo de entrenos en un Box de Crossfit. Al final, hablamos de entrenar prácticamente todos los días e incluso de doblar algunas jornadas.
+
+Esta reflexión cobra todavía más sentido al mirar hacia el próximo año, cuando quiero afrontar la preparación de un IRONMAN. No será solamente un reto deportivo. También será un ejercicio de organización y, sobre todo, de equilibrio. Preparar una prueba así exige muchas horas, constancia y descanso, pero esas horas tendrán que convivir con el trabajo y la familia. El verdadero desafío no será únicamente llegar preparado a la línea de salida, sino hacerlo sin haber descuidado durante el camino los otros dos vértices del triángulo.
+
+Llegar en algunos momentos tan cerca de ese vértice tampoco depende solamente de mí. Para poder encajar entrenamientos largos, madrugones o jornadas dobles necesito el apoyo de mi mujer. A veces eso significa que ella asuma más carga en casa, reorganice sus propios planes o me ayude a proteger unas horas que, de otro modo, no existirían.
+
+Es fácil mirar una preparación deportiva y ver únicamente el esfuerzo de quien entrena, pero detrás suele haber otra persona haciendo concesiones para que ese objetivo sea posible. En mi caso, soy consciente de que no podría plantearme ciertos retos sin su ayuda y su generosidad, especialmente cuando ella también tiene sus responsabilidades, la pastelería y sus propios proyectos.
+
+Ese apoyo no puede darse por supuesto ni convertirse en una deuda permanente. Necesita conversación, acuerdos y reciprocidad. Habrá etapas en las que acordemos que yo pueda acercarme más al extremo del deporte, y otras en las que me corresponda crear el espacio necesario para que ella pueda atender sus propios objetivos. Quizá el equilibrio no consista solamente en mover mi punto dentro del triángulo, sino en entender que nuestros respectivos equilibrios están conectados.
 
 Pero eso no significa que deba crecer sin límites.
 
@@ -113,7 +121,7 @@ La familia no siempre encaja en los huecos previstos. Tiene sus propios ritmos, 
 
 Hay momentos en los que estar presente significa aplazar un entrenamiento, mover una reunión o aceptar que una semana no va a salir como estaba organizada. No necesariamente es un fallo de planificación. A veces es simplemente la decisión correcta.
 
-Y entonces llega ese fatídico día en el que los niños enferman y no pueden ir al colegio. Justo ese día tengo una reunión presencial que no puedo resolver desde casa y mi mujer necesita abrir la pastelería para entregar sus pedidos. El plan salta por los aires y toca reorganizarse.
+Y entonces llega ese fatídico día en el que los niños enferman y no pueden ir al colegio. Justo ese día tengo una reunión presencial que no puedo resolver desde casa y mi mujer necesita abrir la pastelería para entregar sus pedidos.
 
 En ese momento la agenda deja de importar: toca hablar, reorganizarse y decidir quién puede mover qué.
 
