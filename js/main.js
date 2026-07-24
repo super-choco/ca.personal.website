@@ -231,7 +231,7 @@ $(function () {
         $('#techModalPeriod').text(data.period);
 
         var itemsHtml = data.items.map(function (item) {
-            return '<li>' + item + '</li>';
+            return '<li><span>' + item + '</span></li>';
         }).join('');
 
         var tagsHtml = data.tags.map(function (tag) {

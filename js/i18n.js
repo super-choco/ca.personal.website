@@ -96,6 +96,7 @@ var i18n = {
             'reto-202x-full-desc':  'Triatlón · 3.8km natación · 180km bici · 42km carrera',
             'footer-title':         '¿Hablamos?',
             'footer-text':          'Si quieres conocer más sobre mi o mis proyectos, escríbeme o conéctate en LinkedIn.',
+            'footer-created':       'Web creada en 2025',
             'footer-arch':          'Arquitectura de esta web',
             'arch-modal-title':     'Arquitectura de esta web'
         },
@@ -194,6 +195,7 @@ var i18n = {
             'reto-202x-full-desc':  'Triathlon · 3.8km swim · 180km bike · 42km run',
             'footer-title':         'Let\'s talk?',
             'footer-text':          'If you want to know more about me or my projects, drop me a line or connect on LinkedIn.',
+            'footer-created':       'Website created in 2025',
             'footer-arch':          'Architecture of this site',
             'arch-modal-title':     'Architecture of this site'
         },
@@ -292,6 +294,7 @@ var i18n = {
             'reto-202x-full-desc':  'Triatló · 3,8km natació · 180km bici · 42km cursa',
             'footer-title':         'Parlem?',
             'footer-text':          'Si vols saber més sobre mi o els meus projectes, escriu-me o connecta\'t a LinkedIn.',
+            'footer-created':       'Web creada el 2025',
             'footer-arch':          'Arquitectura d\'aquest web',
             'arch-modal-title':     'Arquitectura d\'aquest web'
         }
@@ -331,7 +334,7 @@ var i18n = {
                 period: '2018 – 2026',
                 intro: '8 años de liderazgo estratégico construyendo y escalando equipos de ingeniería de alto rendimiento, impulsando la transformación tecnológica en Vueling Airlines.',
                 items: [
-                    'Creación y liderazgo de equipos devops (ALM, Platform Engineering), pasando desde <strong>la fase de storming hasta perfoming</strong>',
+                    'Creación y liderazgo de equipos DevOps (ALM, Platform Engineering), pasando desde <strong>la fase de storming hasta performing</strong>',
                     'Coordinación y gestión del backlog técnico y roadmap de equipos con áreas de producto y negocio',
                     'Definición de <strong>estrategia tecnológica</strong> en estos equipos',
                     'Impulso de prácticas de ingeniería: <strong>CI/CD, testing, code review, RM, etc</strong>',
