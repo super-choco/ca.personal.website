@@ -50,6 +50,10 @@ Me resulta útil imaginarlos como los vértices de un triángulo:
 2. El trabajo me aporta desarrollo, responsabilidad y recursos.
 3. El deporte me proporciona salud, disciplina y superación.
 
+No todo encaja perfectamente en uno de estos tres vértices. También hay actividades que se sitúan entre ellos. Tocar la guitarra, por ejemplo, es otra de mis aficiones y una forma diferente de desconectar. Cuando además comparto ese momento con uno de mis hijos, deja de ser solamente tiempo para mí y se convierte también en tiempo en familia.
+
+Quizá ahí esté otra de las claves para encontrar cierto equilibrio: no limitarme a repartir las horas, sino buscar actividades capaces de acercar dos vértices. No siempre tengo que elegir entre dedicar tiempo a una afición o estar con mi familia. A veces puedo tocar la guitarra junto a mi niño y hacer que ambas cosas sucedan en el mismo momento, sin que ninguna pierda su valor.
+
 Cuando el trabajo exige más, el punto se desplaza hacia arriba y se aleja de los otros dos vértices. Si decido preparar un objetivo deportivo que requiere aún más horas de entrenamiento, tengo que sacar esas horas de algún sitio. Y cuando mi familia necesita más presencia, hay planes profesionales o deportivos que deben esperar.
 
 No existe una posición en la que todo pueda crecer indefinidamente sin afectar a lo demás.
