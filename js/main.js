@@ -75,16 +75,17 @@ $(function () {
     // ---- MAPA DE LUGARES ----
     if (typeof L !== 'undefined' && typeof placesData !== 'undefined' && placesData.length > 0) {
         var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        var tileLight = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
-        var tileDark = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+        var cartoApiKey = 'cb1_3fw9_1_9ef4097e6daea03d023aa405';
+        var tileLight = 'https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=' + cartoApiKey;
+        var tileDark = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key=' + cartoApiKey;
 
         var map = L.map('placesMap', {
-            scrollWheelZoom: false,
-            attributionControl: false
+            scrollWheelZoom: false
         }).setView([42, 2], 5);
 
         var tileLayer = L.tileLayer(isDark ? tileDark : tileLight, {
-            maxZoom: 18
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         }).addTo(map);
 
         // Cambiar tiles al cambiar tema
