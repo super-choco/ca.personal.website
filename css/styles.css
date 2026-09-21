@@ -426,8 +426,13 @@ img { max-width: 100%; display: block; }
 /* ============================================
    TECNOLOGÍA
 ============================================ */
-.tech-card {
+.tecnologia-section {
     background: var(--bg-alt);
+    border-top: 1px solid var(--border);
+}
+
+.tech-card {
+    background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 32px 28px;
@@ -763,7 +768,7 @@ a.pilar-card-link:hover {
 /* ============================================
    MIS RETOS — OPCIÓN A (BUCKET LIST)
 ============================================ */
-.retos-section { background: var(--bg-alt); border-top: 1px solid var(--border); }
+.retos-section { background: var(--bg); border-top: 1px solid var(--border); }
 .strava-link { color: #FC4C02; text-decoration: underline; text-underline-offset: 3px; }
 .strava-link:hover { color: #e04000; }
 
